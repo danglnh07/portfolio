@@ -1,0 +1,79 @@
+{
+    "name": "Le Nguyen Hai Dang",
+    "role": "Backend Developer",
+    "tagline": "Backend developer focused on Go and .NET, with a growing interest in DevOps and AI engineering.",
+    "bio": "I build backend systems and the infrastructure that keeps them observable — services in Go and .NET, backed by Postgres, containers, and a Prometheus/Grafana/Loki monitoring stack. Lately I've been pushing further into DevOps practice and applied AI engineering.",
+    "location": "Can Tho, Vietnam",
+    "email": "danglnh07.work@gmail.com",
+    "resumeUrl": "",
+    "socials": [
+        { "label": "GitHub", "url": "https://github.com/danglnh07" },
+        { "label": "LinkedIn", "url": "www.linkedin.com/in/đăng-lê-nguyễn-hải-8485b1315" },
+        { "label": "Email", "url": "mailto:danglnh07.work@gmail.com" }
+    ],
+    "stack": {
+        "languages": ["Go", "C# / .NET", "TypeScript", "Python"],
+        "focus": ["Backend", "DevOps", "AI Engineering"],
+        "tools": [
+            "PostgreSQL",
+            "Docker",
+            "Prometheus",
+            "Grafana",
+            "Loki",
+            "Promtail",
+            "Stripe API",
+            ".NET Aspire"
+        ]
+    },
+    "projects": [
+        {
+            "name": "Tekticket - A modern ticket ordering and event management platform",
+            "description": "Backend for an online ticket ordering and event management platform — handles catalog, seat/ticket inventory, checkout, and payment webhooks.",
+            "stack": ["Go", "PostgreSQL", "Stripe", "Prometheus", "Grafana", "Loki", "Promtail"],
+            "repo": "https://github.com/danglnh07/tekticket",
+            "highlights": [
+                "Payment flow built on Stripe, with webhook handling for order state transitions",
+                "Full observability stack wired in: metrics via Prometheus/Grafana, logs via Loki/Promtail",
+                "Postgres schema modelling events, seat inventory, and orders under concurrent checkout"
+            ]
+        },
+        {
+            "name": "Serina - A chess engine built purely in Go",
+            "description": "A chess engine written in Go — bitboard representation, move generation, and search using Minimax and Alpha-Beta pruning.",
+            "stack": ["Go"],
+            "repo": "https://github.com/danglnh07/Serina",
+            "highlights": [
+                "Move generation and board state built from scratch, no external chess libraries",
+                "Search and evaluation tuned for reasonable play strength within a time budget"
+            ]
+        },
+        {
+            "name": "RespiraAMS - A clinical decision support system for CAP disease",
+            "description": "A clinical decision support system for empirically diagnosing community-acquired pneumonia (CAP), built for hospital use as a set of .NET microservices.",
+            "stack": ["C# / .NET", "Microservices", ".NET Aspire"],
+            "repo": "https://github.com/KhaiNguyenHoang/RespiraAMS",
+            "highlights": [
+                "First module assesses patient severity and recommended treatment site",
+                "Reconciles three overlapping severity scales — CURB-65/CRB-65, the Pneumonia Severity Index, and ATS ICU criteria",
+                "Core challenge: the scales share metrics that are transformed differently (CURB-65 uremia vs. ATS BUN) or combined differently (PSI's PaO2 vs. ATS's PaO2/FiO2 ratio), alongside boolean criteria",
+                "Orchestrated as microservices with .NET Aspire"
+            ]
+        }
+    ],
+    "certificates": [
+        {
+            "title": "Web Design for Everybody: Basics of Web Development & Coding",
+            "issuer": "University of Michigan",
+            "date": "Nov 17, 2024",
+            "url": "https://coursera.org/share/0896accbeb6ffc794857cae806fc20d7",
+            "image": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~QBAOUVCJO32V/CERTIFICATE_LANDING_PAGE~QBAOUVCJO32V.jpeg"
+        },
+        {
+            "title": "User Experience Research and Design",
+            "issuer": "University of Michigan",
+            "date": "Aug 2, 2025",
+            "url": "https://coursera.org/share/6a5254226e3a141fceb8135342e11c17",
+            "image": "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~GIBSQIA8SCZD/CERTIFICATE_LANDING_PAGE~GIBSQIA8SCZD.jpeg"
+        }
+    ]
+}
