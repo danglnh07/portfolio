@@ -4,85 +4,61 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Portfolio</title>
-<meta name="description" content="Backend developer portfolio — Go, .NET, DevOps, AI engineering.">
+<meta name="description" content="UI/UX designer portfolio and credentials.">
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="layout">
+<header class="nav">
+  <a href="#top" class="nav__name" id="nav-name">&nbsp;</a>
+  <nav class="nav__links">
+    <a href="#about">About</a>
+    <a href="#credentials">Credentials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <span class="nav__status" id="nav-status"></span>
+</header>
 
-  <aside class="sidenav" aria-label="Section navigation">
-    <div class="sidenav__top">
-      <span class="sidenav__mark" aria-hidden="true">&gt;_</span>
-      <span class="sidenav__name" id="nav-name">loading&hellip;</span>
-    </div>
-    <nav class="sidenav__nav">
-      <a href="#intro"><span class="nav-index">intro</span></a>
-      <a href="#stack"><span class="nav-index">stack</span></a>
-      <a href="#projects"><span class="nav-index">projects</span></a>
-      <a href="#certificates"><span class="nav-index">certificates</span></a>
-      <a href="#contact"><span class="nav-index">contact</span></a>
-    </nav>
-    <div class="sidenav__bottom">
-      <ul class="sidenav__socials" id="nav-socials"></ul>
-    </div>
-  </aside>
+<main id="top">
 
-  <main>
-
-    <section id="intro" class="section hero">
-      <div class="terminal" role="img" aria-label="Terminal introduction">
-        <div class="terminal__line">
-          <span class="terminal__prompt">$</span>
-          <span class="terminal__cmd">whoami</span>
-        </div>
-        <div class="terminal__output">
-          <h1 id="hero-name">&nbsp;</h1>
-          <p class="hero-role" id="hero-role">&nbsp;</p>
-        </div>
-        <div class="terminal__line">
-          <span class="terminal__prompt">$</span>
-          <span class="terminal__cmd" id="hero-tagline-cmd">cat about.md</span>
-        </div>
-        <p class="hero-tagline" id="hero-tagline">&nbsp;</p>
-        <div class="terminal__line terminal__cursor-line" aria-hidden="true">
-          <span class="terminal__prompt">$</span>
-          <span class="terminal__cursor"></span>
-        </div>
+  <section id="about" class="hero">
+    <div class="hero__block" aria-hidden="true"></div>
+    <div class="hero__content">
+      <p class="hero__role" id="hero-role">&nbsp;</p>
+      <h1 class="hero__name" id="hero-name">&nbsp;</h1>
+      <p class="hero__tagline" id="hero-tagline"></p>
+      <div class="hero__actions">
+        <a class="cta" href="#contact">Let's work together</a>
+        <a class="cta cta--ghost" href="#credentials">View credentials</a>
       </div>
-      <p class="hero-bio" id="hero-bio"></p>
-    </section>
+    </div>
+    <div class="about">
+      <p class="about__bio" id="about-bio"></p>
+      <ul class="skills" id="skills-list"></ul>
+    </div>
+  </section>
 
-    <section id="stack" class="section">
-      <h2 class="section__title">Stack</h2>
-      <pre class="manifest" id="stack-manifest" aria-label="Tech stack manifest"><code></code></pre>
-    </section>
+  <section id="credentials" class="credentials">
+    <h2 class="section__title">Credentials</h2>
+    <div class="cert-grid" id="cert-grid"></div>
+  </section>
 
-    <section id="projects" class="section">
-      <h2 class="section__title">Projects</h2>
-      <div class="registry" id="projects-list"></div>
-    </section>
+  <section id="contact" class="contact">
+    <h2 class="section__title">Let's work together</h2>
+    <p id="contact-text"></p>
+    <ul class="contact-list" id="contact-list"></ul>
+  </section>
 
-    <section id="certificates" class="section">
-      <h2 class="section__title">Certificates</h2>
-      <ul class="cert-list" id="certificates-list"></ul>
-    </section>
+</main>
 
-    <section id="contact" class="section contact">
-      <h2 class="section__title">Contact</h2>
-      <p id="contact-text"></p>
-      <ul class="contact-links" id="contact-links"></ul>
-      <footer class="footer">
-        <span id="footer-status">status: online</span>
-      </footer>
-    </section>
-
-  </main>
-</div>
+<footer class="footer">
+  <span id="footer-name"></span>
+  <span id="footer-location"></span>
+</footer>
 
 <script src="script.js"></script>
 </body>
